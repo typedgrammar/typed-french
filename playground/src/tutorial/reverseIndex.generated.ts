@@ -32,6 +32,93 @@ export const REVERSE_INDEX: Record<string, ExampleRef[]> = {
       "pointTitleZh": "否定：ne … pas",
       "anchor": "ex-e02-e02-3-1",
       "fr": "Il n'aime pas le café."
+    },
+    {
+      "chapterId": "e05",
+      "chapterTitleEn": "Asking questions: est-ce que & rising intonation",
+      "chapterTitleZh": "提问：est-ce que 与升调",
+      "pointTitleEn": "The all-purpose tag: est-ce que",
+      "pointTitleZh": "万能标签：est-ce que",
+      "anchor": "ex-e05-e05-2-1",
+      "fr": "Est-ce qu'il aime le café ?"
+    },
+    {
+      "chapterId": "e05",
+      "chapterTitleEn": "Asking questions: est-ce que & rising intonation",
+      "chapterTitleZh": "提问：est-ce que 与升调",
+      "pointTitleEn": "What NOT to do: the English inversion habit",
+      "pointTitleZh": "不要做的事：英语的倒装习惯",
+      "anchor": "ex-e05-e05-3-0",
+      "fr": "Tu aimes le chat ?"
+    },
+    {
+      "chapterId": "e05",
+      "chapterTitleEn": "Asking questions: est-ce que & rising intonation",
+      "chapterTitleZh": "提问：est-ce que 与升调",
+      "pointTitleEn": "What NOT to do: the English inversion habit",
+      "pointTitleZh": "不要做的事：英语的倒装习惯",
+      "anchor": "ex-e05-e05-3-1",
+      "fr": "Est-ce que tu aimes le chat ?"
+    }
+  ],
+  "ami": [
+    {
+      "chapterId": "e03",
+      "chapterTitleEn": "Plural nouns & des",
+      "chapterTitleZh": "复数名词与 des",
+      "pointTitleEn": "Some: des",
+      "pointTitleZh": "一些：des",
+      "anchor": "ex-e03-e03-2-0",
+      "fr": "Des amis sont heureux."
+    }
+  ],
+  "attendre": [
+    {
+      "chapterId": "e06",
+      "chapterTitleEn": "-ir & -re verbs",
+      "chapterTitleZh": "-ir 与 -re 动词",
+      "pointTitleEn": "Third group: -re verbs and the silent il",
+      "pointTitleZh": "第三组：-re 动词与沉默的 il",
+      "anchor": "ex-e06-e06-2-1",
+      "fr": "La femme attend le chat."
+    }
+  ],
+  "avoir": [
+    {
+      "chapterId": "e04",
+      "chapterTitleEn": "être & avoir",
+      "chapterTitleZh": "être 与 avoir",
+      "pointTitleEn": "avoir (to have): j'ai, tu as, il a",
+      "pointTitleZh": "avoir（有）：j'ai、tu as、il a",
+      "anchor": "ex-e04-e04-2-0",
+      "fr": "J'ai un chat."
+    },
+    {
+      "chapterId": "e04",
+      "chapterTitleEn": "être & avoir",
+      "chapterTitleZh": "être 与 avoir",
+      "pointTitleEn": "avoir (to have): j'ai, tu as, il a",
+      "pointTitleZh": "avoir（有）：j'ai、tu as、il a",
+      "anchor": "ex-e04-e04-2-1",
+      "fr": "Vous avez une voiture."
+    },
+    {
+      "chapterId": "e04",
+      "chapterTitleEn": "être & avoir",
+      "chapterTitleZh": "être 与 avoir",
+      "pointTitleEn": "avoir for age and hunger: j'ai … ans, j'ai faim",
+      "pointTitleZh": "用 avoir 表年龄和饥饿：j'ai … ans、j'ai faim",
+      "anchor": "ex-e04-e04-3-0",
+      "fr": "J'ai vingt ans."
+    },
+    {
+      "chapterId": "e04",
+      "chapterTitleEn": "être & avoir",
+      "chapterTitleZh": "être 与 avoir",
+      "pointTitleEn": "avoir for age and hunger: j'ai … ans, j'ai faim",
+      "pointTitleZh": "用 avoir 表年龄和饥饿：j'ai … ans、j'ai faim",
+      "anchor": "ex-e04-e04-3-1",
+      "fr": "J'ai faim."
     }
   ],
   "café": [
@@ -52,6 +139,24 @@ export const REVERSE_INDEX: Record<string, ExampleRef[]> = {
       "pointTitleZh": "否定：ne … pas",
       "anchor": "ex-e02-e02-3-1",
       "fr": "Il n'aime pas le café."
+    },
+    {
+      "chapterId": "e05",
+      "chapterTitleEn": "Asking questions: est-ce que & rising intonation",
+      "chapterTitleZh": "提问：est-ce que 与升调",
+      "pointTitleEn": "The all-purpose tag: est-ce que",
+      "pointTitleZh": "万能标签：est-ce que",
+      "anchor": "ex-e05-e05-2-1",
+      "fr": "Est-ce qu'il aime le café ?"
+    },
+    {
+      "chapterId": "e06",
+      "chapterTitleEn": "-ir & -re verbs",
+      "chapterTitleZh": "-ir 与 -re 动词",
+      "pointTitleEn": "Putting them to work: questions and negation",
+      "pointTitleZh": "投入使用：提问与否定",
+      "anchor": "ex-e06-e06-3-0",
+      "fr": "Je ne finis pas le café."
     }
   ],
   "chat": [
@@ -72,6 +177,62 @@ export const REVERSE_INDEX: Record<string, ExampleRef[]> = {
       "pointTitleZh": "元音前的 j'",
       "anchor": "ex-e02-e02-2-0",
       "fr": "J'aime le chat."
+    },
+    {
+      "chapterId": "e03",
+      "chapterTitleEn": "Plural nouns & des",
+      "chapterTitleZh": "复数名词与 des",
+      "pointTitleEn": "Adjectives agree in the plural too",
+      "pointTitleZh": "形容词在复数里也要一致",
+      "anchor": "ex-e03-e03-3-0",
+      "fr": "Les chats sont noirs."
+    },
+    {
+      "chapterId": "e04",
+      "chapterTitleEn": "être & avoir",
+      "chapterTitleZh": "être 与 avoir",
+      "pointTitleEn": "avoir (to have): j'ai, tu as, il a",
+      "pointTitleZh": "avoir（有）：j'ai、tu as、il a",
+      "anchor": "ex-e04-e04-2-0",
+      "fr": "J'ai un chat."
+    },
+    {
+      "chapterId": "e05",
+      "chapterTitleEn": "Asking questions: est-ce que & rising intonation",
+      "chapterTitleZh": "提问：est-ce que 与升调",
+      "pointTitleEn": "What NOT to do: the English inversion habit",
+      "pointTitleZh": "不要做的事：英语的倒装习惯",
+      "anchor": "ex-e05-e05-3-0",
+      "fr": "Tu aimes le chat ?"
+    },
+    {
+      "chapterId": "e05",
+      "chapterTitleEn": "Asking questions: est-ce que & rising intonation",
+      "chapterTitleZh": "提问：est-ce que 与升调",
+      "pointTitleEn": "What NOT to do: the English inversion habit",
+      "pointTitleZh": "不要做的事：英语的倒装习惯",
+      "anchor": "ex-e05-e05-3-1",
+      "fr": "Est-ce que tu aimes le chat ?"
+    },
+    {
+      "chapterId": "e06",
+      "chapterTitleEn": "-ir & -re verbs",
+      "chapterTitleZh": "-ir 与 -re 动词",
+      "pointTitleEn": "Third group: -re verbs and the silent il",
+      "pointTitleZh": "第三组：-re 动词与沉默的 il",
+      "anchor": "ex-e06-e06-2-1",
+      "fr": "La femme attend le chat."
+    }
+  ],
+  "choisir": [
+    {
+      "chapterId": "e06",
+      "chapterTitleEn": "-ir & -re verbs",
+      "chapterTitleZh": "-ir 与 -re 动词",
+      "pointTitleEn": "Second group: -ir verbs and the -iss- surprise",
+      "pointTitleZh": "第二组：-ir 动词与 -iss- 惊喜",
+      "anchor": "ex-e06-e06-1-1",
+      "fr": "Nous choisissons une pomme."
     }
   ],
   "enfant": [
@@ -121,6 +282,111 @@ export const REVERSE_INDEX: Record<string, ExampleRef[]> = {
       "pointTitleZh": "一个：un 与 une",
       "anchor": "ex-e01-e01-3-0",
       "fr": "Une pomme est rouge."
+    },
+    {
+      "chapterId": "e03",
+      "chapterTitleEn": "Plural nouns & des",
+      "chapterTitleZh": "复数名词与 des",
+      "pointTitleEn": "Add -s, and one article for all: les",
+      "pointTitleZh": "加 -s，一个冠词通吃：les",
+      "anchor": "ex-e03-e03-1-0",
+      "fr": "Les livres sont petits."
+    },
+    {
+      "chapterId": "e03",
+      "chapterTitleEn": "Plural nouns & des",
+      "chapterTitleZh": "复数名词与 des",
+      "pointTitleEn": "Add -s, and one article for all: les",
+      "pointTitleZh": "加 -s，一个冠词通吃：les",
+      "anchor": "ex-e03-e03-1-1",
+      "fr": "Les journaux sont français."
+    },
+    {
+      "chapterId": "e03",
+      "chapterTitleEn": "Plural nouns & des",
+      "chapterTitleZh": "复数名词与 des",
+      "pointTitleEn": "Some: des",
+      "pointTitleZh": "一些：des",
+      "anchor": "ex-e03-e03-2-0",
+      "fr": "Des amis sont heureux."
+    },
+    {
+      "chapterId": "e03",
+      "chapterTitleEn": "Plural nouns & des",
+      "chapterTitleZh": "复数名词与 des",
+      "pointTitleEn": "Adjectives agree in the plural too",
+      "pointTitleZh": "形容词在复数里也要一致",
+      "anchor": "ex-e03-e03-3-0",
+      "fr": "Les chats sont noirs."
+    },
+    {
+      "chapterId": "e03",
+      "chapterTitleEn": "Plural nouns & des",
+      "chapterTitleZh": "复数名词与 des",
+      "pointTitleEn": "Adjectives agree in the plural too",
+      "pointTitleZh": "形容词在复数里也要一致",
+      "anchor": "ex-e03-e03-3-1",
+      "fr": "Les voitures sont grandes."
+    },
+    {
+      "chapterId": "e04",
+      "chapterTitleEn": "être & avoir",
+      "chapterTitleZh": "être 与 avoir",
+      "pointTitleEn": "être (to be): je suis, tu es, il est",
+      "pointTitleZh": "être（是）：je suis、tu es、il est",
+      "anchor": "ex-e04-e04-1-0",
+      "fr": "Je suis étudiant."
+    },
+    {
+      "chapterId": "e04",
+      "chapterTitleEn": "être & avoir",
+      "chapterTitleZh": "être 与 avoir",
+      "pointTitleEn": "être (to be): je suis, tu es, il est",
+      "pointTitleZh": "être（是）：je suis、tu es、il est",
+      "anchor": "ex-e04-e04-1-1",
+      "fr": "Nous sommes français."
+    }
+  ],
+  "femme": [
+    {
+      "chapterId": "e06",
+      "chapterTitleEn": "-ir & -re verbs",
+      "chapterTitleZh": "-ir 与 -re 动词",
+      "pointTitleEn": "Third group: -re verbs and the silent il",
+      "pointTitleZh": "第三组：-re 动词与沉默的 il",
+      "anchor": "ex-e06-e06-2-1",
+      "fr": "La femme attend le chat."
+    }
+  ],
+  "finir": [
+    {
+      "chapterId": "e06",
+      "chapterTitleEn": "-ir & -re verbs",
+      "chapterTitleZh": "-ir 与 -re 动词",
+      "pointTitleEn": "Second group: -ir verbs and the -iss- surprise",
+      "pointTitleZh": "第二组：-ir 动词与 -iss- 惊喜",
+      "anchor": "ex-e06-e06-1-0",
+      "fr": "Je finis le pain."
+    },
+    {
+      "chapterId": "e06",
+      "chapterTitleEn": "-ir & -re verbs",
+      "chapterTitleZh": "-ir 与 -re 动词",
+      "pointTitleEn": "Putting them to work: questions and negation",
+      "pointTitleZh": "投入使用：提问与否定",
+      "anchor": "ex-e06-e06-3-0",
+      "fr": "Je ne finis pas le café."
+    }
+  ],
+  "français": [
+    {
+      "chapterId": "e03",
+      "chapterTitleEn": "Plural nouns & des",
+      "chapterTitleZh": "复数名词与 des",
+      "pointTitleEn": "Add -s, and one article for all: les",
+      "pointTitleZh": "加 -s，一个冠词通吃：les",
+      "anchor": "ex-e03-e03-1-1",
+      "fr": "Les journaux sont français."
     }
   ],
   "grand": [
@@ -132,6 +398,70 @@ export const REVERSE_INDEX: Record<string, ExampleRef[]> = {
       "pointTitleZh": "每个名词都有性别 —— le 与 la",
       "anchor": "ex-e01-e01-1-1",
       "fr": "La voiture est grande."
+    },
+    {
+      "chapterId": "e03",
+      "chapterTitleEn": "Plural nouns & des",
+      "chapterTitleZh": "复数名词与 des",
+      "pointTitleEn": "Adjectives agree in the plural too",
+      "pointTitleZh": "形容词在复数里也要一致",
+      "anchor": "ex-e03-e03-3-1",
+      "fr": "Les voitures sont grandes."
+    }
+  ],
+  "habiter": [
+    {
+      "chapterId": "e05",
+      "chapterTitleEn": "Asking questions: est-ce que & rising intonation",
+      "chapterTitleZh": "提问：est-ce que 与升调",
+      "pointTitleEn": "Just raise your voice: the intonation question",
+      "pointTitleZh": "只需提高声调：升调疑问句",
+      "anchor": "ex-e05-e05-1-1",
+      "fr": "Vous habitez ici ?"
+    }
+  ],
+  "heureux": [
+    {
+      "chapterId": "e03",
+      "chapterTitleEn": "Plural nouns & des",
+      "chapterTitleZh": "复数名词与 des",
+      "pointTitleEn": "Some: des",
+      "pointTitleZh": "一些：des",
+      "anchor": "ex-e03-e03-2-0",
+      "fr": "Des amis sont heureux."
+    }
+  ],
+  "journal": [
+    {
+      "chapterId": "e03",
+      "chapterTitleEn": "Plural nouns & des",
+      "chapterTitleZh": "复数名词与 des",
+      "pointTitleEn": "Add -s, and one article for all: les",
+      "pointTitleZh": "加 -s，一个冠词通吃：les",
+      "anchor": "ex-e03-e03-1-1",
+      "fr": "Les journaux sont français."
+    }
+  ],
+  "livre": [
+    {
+      "chapterId": "e03",
+      "chapterTitleEn": "Plural nouns & des",
+      "chapterTitleZh": "复数名词与 des",
+      "pointTitleEn": "Add -s, and one article for all: les",
+      "pointTitleZh": "加 -s，一个冠词通吃：les",
+      "anchor": "ex-e03-e03-1-0",
+      "fr": "Les livres sont petits."
+    }
+  ],
+  "maison": [
+    {
+      "chapterId": "e06",
+      "chapterTitleEn": "-ir & -re verbs",
+      "chapterTitleZh": "-ir 与 -re 动词",
+      "pointTitleEn": "Putting them to work: questions and negation",
+      "pointTitleZh": "投入使用：提问与否定",
+      "anchor": "ex-e06-e06-3-1",
+      "fr": "Est-ce que tu vends la maison ?"
     }
   ],
   "noir": [
@@ -143,6 +473,26 @@ export const REVERSE_INDEX: Record<string, ExampleRef[]> = {
       "pointTitleZh": "每个名词都有性别 —— le 与 la",
       "anchor": "ex-e01-e01-1-0",
       "fr": "Le chat est noir."
+    },
+    {
+      "chapterId": "e03",
+      "chapterTitleEn": "Plural nouns & des",
+      "chapterTitleZh": "复数名词与 des",
+      "pointTitleEn": "Adjectives agree in the plural too",
+      "pointTitleZh": "形容词在复数里也要一致",
+      "anchor": "ex-e03-e03-3-0",
+      "fr": "Les chats sont noirs."
+    }
+  ],
+  "pain": [
+    {
+      "chapterId": "e06",
+      "chapterTitleEn": "-ir & -re verbs",
+      "chapterTitleZh": "-ir 与 -re 动词",
+      "pointTitleEn": "Second group: -ir verbs and the -iss- surprise",
+      "pointTitleZh": "第二组：-ir 动词与 -iss- 惊喜",
+      "anchor": "ex-e06-e06-1-0",
+      "fr": "Je finis le pain."
     }
   ],
   "parler": [
@@ -163,6 +513,24 @@ export const REVERSE_INDEX: Record<string, ExampleRef[]> = {
       "pointTitleZh": "否定：ne … pas",
       "anchor": "ex-e02-e02-3-0",
       "fr": "Tu ne parles pas anglais."
+    },
+    {
+      "chapterId": "e05",
+      "chapterTitleEn": "Asking questions: est-ce que & rising intonation",
+      "chapterTitleZh": "提问：est-ce que 与升调",
+      "pointTitleEn": "Just raise your voice: the intonation question",
+      "pointTitleZh": "只需提高声调：升调疑问句",
+      "anchor": "ex-e05-e05-1-0",
+      "fr": "Tu parles français ?"
+    },
+    {
+      "chapterId": "e05",
+      "chapterTitleEn": "Asking questions: est-ce que & rising intonation",
+      "chapterTitleZh": "提问：est-ce que 与升调",
+      "pointTitleEn": "The all-purpose tag: est-ce que",
+      "pointTitleZh": "万能标签：est-ce que",
+      "anchor": "ex-e05-e05-2-0",
+      "fr": "Est-ce que tu parles anglais ?"
     }
   ],
   "petit": [
@@ -174,6 +542,15 @@ export const REVERSE_INDEX: Record<string, ExampleRef[]> = {
       "pointTitleZh": "元音前：l'",
       "anchor": "ex-e01-e01-2-0",
       "fr": "L'enfant est petit."
+    },
+    {
+      "chapterId": "e03",
+      "chapterTitleEn": "Plural nouns & des",
+      "chapterTitleZh": "复数名词与 des",
+      "pointTitleEn": "Add -s, and one article for all: les",
+      "pointTitleZh": "加 -s，一个冠词通吃：les",
+      "anchor": "ex-e03-e03-1-0",
+      "fr": "Les livres sont petits."
     }
   ],
   "pomme": [
@@ -185,6 +562,15 @@ export const REVERSE_INDEX: Record<string, ExampleRef[]> = {
       "pointTitleZh": "一个：un 与 une",
       "anchor": "ex-e01-e01-3-0",
       "fr": "Une pomme est rouge."
+    },
+    {
+      "chapterId": "e06",
+      "chapterTitleEn": "-ir & -re verbs",
+      "chapterTitleZh": "-ir 与 -re 动词",
+      "pointTitleEn": "Second group: -ir verbs and the -iss- surprise",
+      "pointTitleZh": "第二组：-ir 动词与 -iss- 惊喜",
+      "anchor": "ex-e06-e06-1-1",
+      "fr": "Nous choisissons une pomme."
     }
   ],
   "rouge": [
@@ -198,6 +584,26 @@ export const REVERSE_INDEX: Record<string, ExampleRef[]> = {
       "fr": "Une pomme est rouge."
     }
   ],
+  "vendre": [
+    {
+      "chapterId": "e06",
+      "chapterTitleEn": "-ir & -re verbs",
+      "chapterTitleZh": "-ir 与 -re 动词",
+      "pointTitleEn": "Third group: -re verbs and the silent il",
+      "pointTitleZh": "第三组：-re 动词与沉默的 il",
+      "anchor": "ex-e06-e06-2-0",
+      "fr": "Je vends la voiture."
+    },
+    {
+      "chapterId": "e06",
+      "chapterTitleEn": "-ir & -re verbs",
+      "chapterTitleZh": "-ir 与 -re 动词",
+      "pointTitleEn": "Putting them to work: questions and negation",
+      "pointTitleZh": "投入使用：提问与否定",
+      "anchor": "ex-e06-e06-3-1",
+      "fr": "Est-ce que tu vends la maison ?"
+    }
+  ],
   "voiture": [
     {
       "chapterId": "e01",
@@ -207,6 +613,33 @@ export const REVERSE_INDEX: Record<string, ExampleRef[]> = {
       "pointTitleZh": "每个名词都有性别 —— le 与 la",
       "anchor": "ex-e01-e01-1-1",
       "fr": "La voiture est grande."
+    },
+    {
+      "chapterId": "e03",
+      "chapterTitleEn": "Plural nouns & des",
+      "chapterTitleZh": "复数名词与 des",
+      "pointTitleEn": "Adjectives agree in the plural too",
+      "pointTitleZh": "形容词在复数里也要一致",
+      "anchor": "ex-e03-e03-3-1",
+      "fr": "Les voitures sont grandes."
+    },
+    {
+      "chapterId": "e04",
+      "chapterTitleEn": "être & avoir",
+      "chapterTitleZh": "être 与 avoir",
+      "pointTitleEn": "avoir (to have): j'ai, tu as, il a",
+      "pointTitleZh": "avoir（有）：j'ai、tu as、il a",
+      "anchor": "ex-e04-e04-2-1",
+      "fr": "Vous avez une voiture."
+    },
+    {
+      "chapterId": "e06",
+      "chapterTitleEn": "-ir & -re verbs",
+      "chapterTitleZh": "-ir 与 -re 动词",
+      "pointTitleEn": "Third group: -re verbs and the silent il",
+      "pointTitleZh": "第三组：-re 动词与沉默的 il",
+      "anchor": "ex-e06-e06-2-0",
+      "fr": "Je vends la voiture."
     }
   ]
 };
