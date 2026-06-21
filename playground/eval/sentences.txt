@@ -1,0 +1,28 @@
+# Japanese sentence pool for the eval loop's `annotate` arm.
+# One sentence per line; lines starting with # are ignored.
+# Chosen to span beginner→advanced and to stress known weak spots
+# (collapsed phrases, na-adjectives, pronouns, counters, fixed expressions).
+猫がいます。
+これは本です。
+私は学生です。
+机の上に猫がいます。
+毎日日本語を勉強します。
+その店はとても便利だ。
+彼は有名な先生です。
+りんごを三つください。
+二人で映画を見ました。
+すぐに来てください。
+日本語が上手になりたい。
+それは私の趣味です。
+あの本はとても面白いです。
+雨が降るかもしれません。
+勉強すればするほど分からなくなる。
+寿司を食べたことがあります。
+子供の頃はよくここで遊んだ。
+行かざるを得ない。
+水を飲みすぎた。
+窓を開けてもいいですか。
+先生がおっしゃいました。
+この町は静かで便利です。
+明日は早く起きなければならない。
+彼女は元気になりました。

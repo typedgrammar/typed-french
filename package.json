@@ -1,0 +1,29 @@
+{
+  "name": "@typedgrammar/typed-french",
+  "version": "0.1.0",
+  "description": "TypeScript types for French grammar",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "build": "tsc",
+    "lint": "eslint . --ext .ts,.tsx",
+    "test": "pnpm typecheck && pnpm lint"
+  },
+  "keywords": [
+    "typescript",
+    "french",
+    "grammar",
+    "types"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@eslint/js": "^9.39.4",
+    "@typescript-eslint/eslint-plugin": "^8.61.0",
+    "@typescript-eslint/parser": "^8.61.0",
+    "eslint": "^9.39.4",
+    "typescript": "^5.9.3"
+  }
+}

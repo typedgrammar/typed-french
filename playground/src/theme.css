@@ -1,0 +1,313 @@
+/* ----------------------------------------------------------------------------
+   Typed French Playground — global theme · "Crème & Bleu de France" ⚜️
+   Warm cream paper (papier crème), deep bleu-nuit ink, a single muted
+   bleu-de-France accent, with a touch of rouge and a filet doré (gold hairline).
+   The tricolore in sourdine — editorial, never the saturated flag.
+
+   Tailwind v4 is the styling system. The design tokens stay as CSS custom
+   properties (the source of truth, light in :root and dark in
+   :root[data-theme="dark"]) and are mapped into Tailwind's theme with
+   `@theme inline`, so utilities like `bg-azur-500` / `text-ink-900` resolve to
+   those vars and dark mode works with no `dark:` variants.
+---------------------------------------------------------------------------- */
+
+@import "tailwindcss";
+
+/* Dark mode is driven by <html data-theme="dark"> (set by the no-flash script in
+   index.html), not by the OS — so register a custom `dark` variant for it. */
+@custom-variant dark (&:where([data-theme="dark"], [data-theme="dark"] *));
+
+/* ---- raw design tokens ---------------------------------------------------- */
+:root {
+  color-scheme: light;
+
+  /* bleu de France — muted, scaled from a faint wash (50) to a deep link (600) */
+  --azur-50: #eef2fa;
+  --azur-100: #dde6f5;
+  --azur-200: #bccce9;
+  --azur-300: #93acd9;
+  --azur-400: #6285c2;
+  --azur-500: #3b5ba5; /* accent — buttons, active state */
+  --azur-600: #2f4a88; /* deeper — links, hover, headings */
+
+  /* encre bleu-nuit — primary text down to faint hairlines */
+  --ink-900: #1c2433;
+  --ink-700: #3f4858;
+  --ink-500: #6b7488;
+  --ink-300: #9aa1b1;
+
+  /* papier crème surfaces */
+  --paper: #f7f4ec;
+  --surface: #fffdf8;
+  --surface-2: #eef0f6;
+  --border: #e7e2d4;
+  --border-strong: #d8d0bd;
+
+  /* semantic */
+  --ok: #2f7d5b;
+  --err: #b23a48;
+  --ok-soft: #e6f3ec;
+  --err-soft: #fbeaec;
+  --accent: var(--azur-500);
+  --on-accent: #ffffff; /* text/icon on an azur-filled surface */
+  --ring: var(--azur-100); /* focus halo */
+  --code-bg: #f1f3f9; /* code / editor chrome backdrop */
+
+  /* French accents-of-state */
+  --rouge: #b23a48; /* touche de rouge — the third colour of the flag */
+  --gold: #b8922f; /* filet doré — gilded hairline / wordmark sheen */
+
+  /* grammar-category accents (composition tree) */
+  --cat-phrase: #b23a48; /* the whole clause — rouge */
+  --cat-conjugation: #8a4fa3;
+  --cat-verb: #3b5ba5;
+  --cat-adjective: #2f8f6b;
+  --cat-noun: #c0791f;
+  --cat-adverb: #2f7a8a;
+  --cat-particle: #6a5bd0; /* articles / prepositions */
+  --cat-form: #0f8a8a;
+  --cat-demonstrative: #5a7a2f;
+  --cat-interrogative: #d8602a;
+  --cat-adnominal: #4a7a8a;
+  --cat-numeral: #b07a2f;
+  --cat-literal: #7b7468;
+  --cat-other: #7b7468;
+
+  --radius: 14px;
+  --radius-sm: 9px;
+  --shadow-sm: 0 1px 2px rgba(28, 36, 51, 0.07);
+  --shadow-md: 0 8px 28px rgba(47, 74, 136, 0.12);
+  --shadow-drawer: -12px 0 40px rgba(47, 74, 136, 0.14);
+  --scrim: rgba(20, 26, 40, 0.3);
+
+  /* page backdrop — soft azur glows drifting off two corners of the cream */
+  --bg-glow-1: rgba(221, 230, 245, 0.9);
+  --bg-glow-2: rgba(188, 204, 233, 0.5);
+
+  /* Editorial type. Playfair Display for the Parisian heading sheen, EB Garamond
+     for warm French prose, Noto Serif SC for 简体中文. Loaded in index.html;
+     gracefully falls back to system serifs. */
+  --font-fr: "EB Garamond", "Noto Serif SC", "Iowan Old Style", Georgia, serif;
+  --font-ui: "EB Garamond", "Noto Serif SC", Georgia, serif;
+  --font-heading: "Playfair Display", "Noto Serif SC", Georgia, serif;
+  --font-mono: "SF Mono", "JetBrains Mono", "Fira Code", ui-monospace, monospace;
+}
+
+:root[data-theme="dark"] {
+  color-scheme: dark;
+
+  /* azur in dark — the scale inverts: 50 is the deepest fill, 600 the
+     brightest. 500 stays the accent, now light enough to read on bleu-nuit. */
+  --azur-50: #141a26;
+  --azur-100: #1e2740;
+  --azur-200: #2f4068;
+  --azur-300: #4f6fa8;
+  --azur-400: #7fa0d8;
+  --azur-500: #8fb0e6; /* accent */
+  --azur-600: #aac4f0; /* lighter hover / links / headings */
+
+  --ink-900: #eef1f7;
+  --ink-700: #d2d7e1;
+  --ink-500: #a3aab8;
+  --ink-300: #757d8d;
+
+  --paper: #12161f; /* nuit */
+  --surface: #1a1f2b;
+  --surface-2: #232a39;
+  --border: #2c3340;
+  --border-strong: #3d4656;
+
+  --ok: #4cc08c;
+  --err: #f0788a;
+  --ok-soft: #19302a;
+  --err-soft: #341f23;
+  --on-accent: #12161f; /* dark ink on a light-azur fill */
+  --ring: #2f4068;
+  --code-bg: #161b25;
+
+  --rouge: #f0788a;
+  --gold: #d8b85f;
+
+  /* category accents — lightened / desaturated to stay legible on #12161f */
+  --cat-phrase: #ef8a98;
+  --cat-conjugation: #c08fd8;
+  --cat-verb: #7fa0e6;
+  --cat-adjective: #5cc79a;
+  --cat-noun: #e0a857;
+  --cat-adverb: #5fb0c2;
+  --cat-particle: #9a8ce8;
+  --cat-form: #4fb5b5;
+  --cat-demonstrative: #a3bd6f;
+  --cat-interrogative: #ec9a6a;
+  --cat-adnominal: #7fb0c2;
+  --cat-numeral: #d8a85f;
+  --cat-literal: #a3aab8;
+  --cat-other: #a3aab8;
+
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.4);
+  --shadow-md: 0 8px 28px rgba(0, 0, 0, 0.45);
+  --shadow-drawer: -12px 0 40px rgba(0, 0, 0, 0.5);
+  --scrim: rgba(0, 0, 0, 0.55);
+
+  --bg-glow-1: rgba(143, 176, 230, 0.08);
+  --bg-glow-2: rgba(79, 111, 168, 0.1);
+}
+
+/* ---- map tokens into Tailwind's theme (dark-aware via the vars above) ----- */
+@theme inline {
+  --color-azur-50: var(--azur-50);
+  --color-azur-100: var(--azur-100);
+  --color-azur-200: var(--azur-200);
+  --color-azur-300: var(--azur-300);
+  --color-azur-400: var(--azur-400);
+  --color-azur-500: var(--azur-500);
+  --color-azur-600: var(--azur-600);
+
+  --color-ink-900: var(--ink-900);
+  --color-ink-700: var(--ink-700);
+  --color-ink-500: var(--ink-500);
+  --color-ink-300: var(--ink-300);
+
+  --color-paper: var(--paper);
+  --color-surface: var(--surface);
+  --color-surface-2: var(--surface-2);
+  --color-border: var(--border);
+  --color-border-strong: var(--border-strong);
+  --color-code-bg: var(--code-bg);
+
+  --color-ok: var(--ok);
+  --color-err: var(--err);
+  --color-ok-soft: var(--ok-soft);
+  --color-err-soft: var(--err-soft);
+  --color-accent: var(--accent);
+  --color-on-accent: var(--on-accent);
+  --color-ring: var(--ring);
+  --color-scrim: var(--scrim);
+  --color-rouge: var(--rouge);
+  --color-gold: var(--gold);
+
+  --color-cat-phrase: var(--cat-phrase);
+  --color-cat-conjugation: var(--cat-conjugation);
+  --color-cat-verb: var(--cat-verb);
+  --color-cat-adjective: var(--cat-adjective);
+  --color-cat-noun: var(--cat-noun);
+  --color-cat-adverb: var(--cat-adverb);
+  --color-cat-particle: var(--cat-particle);
+  --color-cat-form: var(--cat-form);
+  --color-cat-demonstrative: var(--cat-demonstrative);
+  --color-cat-interrogative: var(--cat-interrogative);
+  --color-cat-adnominal: var(--cat-adnominal);
+  --color-cat-numeral: var(--cat-numeral);
+  --color-cat-literal: var(--cat-literal);
+  --color-cat-other: var(--cat-other);
+
+  --font-fr: var(--font-fr);
+  --font-ui: var(--font-ui);
+  --font-heading: var(--font-heading);
+  --font-mono: var(--font-mono);
+  --font-sans: var(--font-ui);
+
+  --radius-card: var(--radius);
+  --radius-field: var(--radius-sm);
+
+  --shadow-card: var(--shadow-sm);
+  --shadow-pop: var(--shadow-md);
+  --shadow-drawer: var(--shadow-drawer);
+}
+
+/* ---- base ----------------------------------------------------------------- */
+@layer base {
+  html,
+  body,
+  #root {
+    height: 100%;
+    margin: 0;
+  }
+
+  body {
+    font-family: var(--font-ui);
+    color: var(--ink-900);
+    background:
+      radial-gradient(1200px 500px at 100% -10%, var(--bg-glow-1), transparent 60%),
+      radial-gradient(900px 500px at -10% 110%, var(--bg-glow-2), transparent 55%),
+      var(--paper);
+    /* Anchor the glows to the viewport so they don't tile into a visible seam
+       every screen-height as the page scrolls. */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    -webkit-font-smoothing: antialiased;
+    transition: background-color 0.2s ease, color 0.2s ease;
+  }
+
+  :lang(fr),
+  .fr {
+    font-family: var(--font-fr);
+  }
+}
+
+/* ---- shared component primitives (used across feature components) --------- */
+@layer components {
+  .tj-card {
+    @apply bg-surface border border-border rounded-card shadow-card;
+  }
+
+  .tj-panel-title {
+    @apply m-0 mb-1 text-[1.05rem] font-bold text-ink-900;
+  }
+
+  .tj-subtle {
+    @apply text-ink-500 text-[0.86rem];
+  }
+
+  .tj-label {
+    @apply block text-[0.72rem] font-bold uppercase text-ink-500 mb-1.5;
+    letter-spacing: 0.04em;
+  }
+
+  .tj-select,
+  .tj-input {
+    @apply w-full px-3 py-[9px] text-[0.95rem] text-ink-900 bg-surface
+      border border-border-strong rounded-field outline-none;
+    font-family: inherit;
+    transition: border-color 0.15s, box-shadow 0.15s;
+  }
+
+  .tj-select:focus,
+  .tj-input:focus {
+    @apply border-azur-400;
+    box-shadow: 0 0 0 3px var(--ring);
+  }
+
+  .tj-btn {
+    @apply inline-flex items-center gap-1.5 px-[14px] py-2 text-[0.9rem]
+      font-semibold text-ink-700 bg-surface border border-border-strong
+      rounded-full cursor-pointer;
+    transition: all 0.15s;
+  }
+
+  .tj-btn:hover {
+    @apply border-azur-400 text-azur-600;
+  }
+
+  .tj-btn--primary {
+    @apply text-on-accent bg-azur-500 border-azur-500;
+  }
+
+  .tj-btn--primary:hover {
+    @apply bg-azur-600 border-azur-600 text-on-accent;
+  }
+
+  .tj-chip {
+    @apply inline-flex items-center gap-1.5 px-2.5 py-1 text-[0.78rem]
+      font-semibold rounded-full bg-surface-2 text-azur-600 border border-border;
+  }
+
+  .tj-result {
+    @apply font-fr text-[1.6rem] font-bold text-azur-600;
+  }
+
+  .tj-code {
+    @apply font-mono text-[0.85rem] bg-surface-2 border border-border
+      rounded-field px-[7px] py-0.5 text-ink-700;
+  }
+}

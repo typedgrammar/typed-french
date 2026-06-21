@@ -1,0 +1,16 @@
+/* brief pulse when arrived at via a glossary "used in" link */
+.exampleFlash {
+  animation: exampleFlash 1.8s ease-out;
+}
+
+@keyframes exampleFlash {
+  0%,
+  35% {
+    border-color: var(--azur-400);
+    box-shadow: 0 0 0 3px var(--azur-200);
+  }
+  100% {
+    border-color: var(--border);
+    box-shadow: 0 0 0 0 transparent;
+  }
+}

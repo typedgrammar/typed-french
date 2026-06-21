@@ -1,0 +1,94 @@
+/* ---- intro: descendant :first-child / :last-child para resets ---- */
+.intro {
+  max-width: 72ch;
+  padding: 16px 20px;
+  background: var(--surface-2);
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+}
+
+.intro .para:first-child {
+  margin-top: 0;
+}
+
+.intro .para:last-child {
+  margin-bottom: 0;
+}
+
+/* para: kept for the descendant `.para strong` rule */
+.para {
+  margin: 10px 0;
+  line-height: 1.78;
+  color: var(--ink-700);
+  max-width: 72ch;
+}
+
+.para strong {
+  color: var(--ink-900);
+  font-weight: 700;
+}
+
+/* ---- composition diagram clause boxes (depth alternation) ---- */
+.diaClause {
+  display: inline-flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 10px 12px;
+  border: 1px solid var(--border-strong);
+  border-radius: var(--radius-sm);
+  background: var(--surface-2);
+}
+
+/* nested clauses get the paper tone so depth reads through alternation */
+.diaClause .diaClause {
+  background: var(--code-bg);
+}
+
+/* the verb chip — kept for the descendant `.diaVerb .diaWord` override */
+.diaVerb {
+  padding: 6px 12px;
+  border-radius: 999px;
+  background: var(--azur-500);
+}
+
+.diaWord {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--ink-900);
+}
+
+.diaVerb .diaWord {
+  color: var(--on-accent);
+}
+
+/* ---- chapter chip: kept for descendant hover on its arrow ---- */
+.chapterChip {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 7px 13px;
+  border: 1px solid var(--border-strong);
+  background: var(--surface);
+  border-radius: 999px;
+  cursor: pointer;
+  font-size: 0.86rem;
+  font-weight: 600;
+  color: var(--ink-700);
+  transition: background 0.12s, border-color 0.12s, color 0.12s, transform 0.12s;
+}
+
+.chapterChip:hover {
+  background: var(--azur-100);
+  border-color: var(--azur-400);
+  color: var(--azur-600);
+  transform: translateY(-1px);
+}
+
+.chapterChipArrow {
+  color: var(--ink-300);
+  font-weight: 700;
+}
+
+.chapterChip:hover .chapterChipArrow {
+  color: var(--azur-500);
+}

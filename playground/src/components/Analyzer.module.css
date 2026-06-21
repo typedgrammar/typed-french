@@ -1,0 +1,9 @@
+/* Monaco inline highlight for the node→source link */
+:global(.monaco-editor) .hl {
+  background: var(--azur-200);
+  border-radius: 2px;
+}
+
+.hlLine {
+  background: var(--azur-100);
+}
